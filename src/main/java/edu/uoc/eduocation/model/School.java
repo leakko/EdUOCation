@@ -1,6 +1,10 @@
 package edu.uoc.eduocation.model;
 
+import com.google.gson.Gson;
+
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class School extends NamedEntity{
     private LinkedList<Location> locations;
@@ -65,5 +69,17 @@ public class School extends NamedEntity{
     public void removeGroup(Group group){
         group.setSchool(null);
         groups.remove(group);
+    }
+
+    @Override
+    public String toString() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("name", this.getName());
+        map.put("locationsCount", this.getLocations().size());
+        map.put("groupsCount", this.getGroups().size());
+
+        Gson gson = new Gson();
+
+        return gson.toJson(map);
     }
 }

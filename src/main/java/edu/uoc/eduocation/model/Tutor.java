@@ -7,7 +7,7 @@ public class Tutor extends Teacher {
 
     private LinkedList<Group> groups;
 
-    Tutor(String nif, String name, String surname, LocalDate birthday) {
+    public Tutor(String nif, String name, String surname, LocalDate birthday) {
         super(nif, name, surname, birthday);
         this.groups = new LinkedList<>();
     }
@@ -17,8 +17,10 @@ public class Tutor extends Teacher {
     }
 
     public void addGroup(Group group) {
-        group.setTutor(this);
         groups.add(group);
+        if(group.getTutor() != this) {
+            group.setTutor(this);
+        }
     }
 
     public void removeGroup(Group group) {

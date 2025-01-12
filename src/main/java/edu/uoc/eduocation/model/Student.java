@@ -1,7 +1,11 @@
 package edu.uoc.eduocation.model;
 
+import com.google.gson.Gson;
+
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class Student extends Person {
     private Group group;

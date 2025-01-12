@@ -337,6 +337,14 @@ public class EdUOCationController {
             throw new IllegalArgumentException("Teacher not found");
         }
 
+        Tutor tutor = new Tutor(
+                teacher.getNif(),
+                teacher.getName(),
+                teacher.getSurname(),
+                teacher.getBirthDate()
+        );
+        group.setTutor(tutor);
+
         for (String studentInfo : studentData) {
             String[] parts = studentInfo.split(":");
             Student student = new Student(parts[0], parts[1], parts[2], LocalDate.parse(parts[3]));
@@ -427,7 +435,7 @@ public class EdUOCationController {
             return new LinkedList<>();
         }
         return schools.stream()
-                .map(NamedEntity::getName)
+                .map(School::toString)
                 .collect(Collectors.toList());
     }
 
@@ -441,7 +449,7 @@ public class EdUOCationController {
             return new LinkedList<>();
         }
         return teachers.stream()
-                .map(NamedEntity::getName)
+                .map(NamedEntity::toString)
                 .collect(Collectors.toList());
     }
 
@@ -473,7 +481,7 @@ public class EdUOCationController {
             return new LinkedList<>();
         }
         return groups.stream()
-                .map(NamedEntity::getName)
+                .map(NamedEntity::toString)
                 .collect(Collectors.toList());
     }
 
@@ -495,7 +503,7 @@ public class EdUOCationController {
         Group group = NamedEntity.findByName(getAllGroups(), groupName);
 
         return group.getStudents().stream()
-                .map(NamedEntity::getName)
+                .map(NamedEntity::toString)
                 .collect(Collectors.toList());
     }
 
@@ -522,7 +530,7 @@ public class EdUOCationController {
         Student student = Person.findByNif(getAllStudents(), studentNIF);
 
         return student.getEnrollments().stream()
-                .map(enrollment -> enrollment.getCourse().getSubject().getName())
+                .map(Enrollment::toString)
                 .collect(Collectors.toList());
     }
 

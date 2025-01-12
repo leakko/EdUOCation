@@ -1,6 +1,10 @@
 package edu.uoc.eduocation.model;
 
+import com.google.gson.Gson;
+
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class Enrollment {
     private double grade;
@@ -85,5 +89,18 @@ public class Enrollment {
                 .filter(enrollment -> enrollment.getStudents().getFirst().getNif().equals(nif))
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public String toString() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("course", this.course.getSubject().getName());
+        map.put("semester", this.getCourse().getSemester().getName());
+        map.put("status", this.getStatus().toString());
+        map.put("mark", this.getGrade());
+
+        Gson gson = new Gson();
+
+        return gson.toJson(map);
     }
 }

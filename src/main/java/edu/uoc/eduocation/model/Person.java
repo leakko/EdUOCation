@@ -1,7 +1,11 @@
 package edu.uoc.eduocation.model;
 
+import com.google.gson.Gson;
+
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 public abstract class Person extends NamedEntity {
     private String nif;
@@ -53,5 +57,18 @@ public abstract class Person extends NamedEntity {
                 .filter(entity -> entity.getNif().equals(nif))
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public String toString() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("nif", this.getNif());
+        map.put("name", this.getName());
+        map.put("surname", this.getSurname());
+        map.put("birthdate", getBirthDate().toString());
+
+        Gson gson = new Gson();
+
+        return gson.toJson(map);
     }
 }
