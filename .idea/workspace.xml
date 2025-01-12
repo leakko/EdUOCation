@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ede79cf-9134-49e6-a576-ae4e5ca265b9" name="Changes" comment="" />
+    <list default="true" id="4ede79cf-9134-49e6-a576-ae4e5ca265b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +37,29 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="EdUOCation" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="EdUOCation" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="EdUOCation" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="EdUOCation" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="EdUOCation" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -39,6 +68,9 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -53,12 +85,15 @@
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.EdUOCation [:edu.uoc.eduocation.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.EdUOCation [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.EdUOCation [run].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.EdUOCation [testAdvanced].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.EdUOCation [testAll].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.EdUOCation [test].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.EdUOCationControllerTest.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/AppData/Local/SceneBuilder/SceneBuilder.exe&quot;,
@@ -74,7 +109,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.EdUOCation [run]">
+  <component name="RunManager" selected="Gradle.EdUOCation [testAll]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.uoc.eduocation.Main" />
       <module name="EdUOCation.main" />
@@ -288,9 +323,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.EdUOCation [run]" />
-        <item itemvalue="Gradle.EdUOCation [build]" />
         <item itemvalue="Gradle.EdUOCation [testAll]" />
+        <item itemvalue="Gradle.EdUOCation [build]" />
+        <item itemvalue="Gradle.EdUOCation [run]" />
         <item itemvalue="Gradle.EdUOCation [testAdvanced]" />
         <item itemvalue="Gradle.EdUOCation [test]" />
       </list>
@@ -323,23 +358,15 @@
       <workItem from="1736687166345" duration="70000" />
       <workItem from="1736688281811" duration="133000" />
       <workItem from="1736688446349" duration="145000" />
-      <workItem from="1736688609902" duration="28000" />
+      <workItem from="1736688609902" duration="616000" />
+      <workItem from="1736689249104" duration="59000" />
+      <workItem from="1736689326715" duration="490000" />
+      <workItem from="1736689911408" duration="101000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/uoc/eduocation/Main.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EdUOCation$EdUOCation__testAll_.ic" NAME="EdUOCation [testAll] Coverage Results" MODIFIED="1736686829073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
